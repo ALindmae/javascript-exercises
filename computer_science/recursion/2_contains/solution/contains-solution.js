@@ -8,11 +8,11 @@ const contains = function (object, searchValue) {
 
   const nestedObjects = values.filter(
     // typeof null === 'object' evaluates to true ¯\_(ツ)_/¯
-    (value) => typeof value === "object" && value !== null
+    (value) => typeof value === "object" && value !== null,
   );
 
   return nestedObjects.some((nestedObject) =>
-    contains(nestedObject, searchValue)
+    contains(nestedObject, searchValue),
   );
 };
 
